@@ -13,20 +13,19 @@ public class BaseTest {
     public static final Logger log = Logger.getLogger(BaseTest.class.getName());
 
     @BeforeMethod
-    public void setUp() {
+    @org.testng.annotations.Parameters({"browser"})
+    public void setUp(String browser) {
         log.info("Test Method setUp");
         Configuration.timeout = 1000;
-        log.info("Remote URL: " + ConfigReader.getRemoteUrl());
-        //Configuration.remote = "http://localhost:4444/wd/hub";
-//        Configuration.remote = ConfigReader.getRemoteUrl();
-        Configuration.browser = "chrome";
-//        Configuration.browserVersion = "latest";
-//        DesiredCapabilities capabilities = new DesiredCapabilities();
-//        capabilities.setCapability("selenoid:options", Map.of(
-//                "enableVNC", true,
-//                "enableVideo", false
-//        ));
-//        Configuration.browserCapabilities = capabilities;
+        Configuration.remote = "http://localhost:4444/wd/hub";
+        Configuration.browser = browser;
+//        Configuration.browserVersion = "124.0";
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("selenoid:options", Map.of(
+                "enableVNC", true,
+                "enableVideo", false
+        ));
+        Configuration.browserCapabilities = capabilities;
         Configuration.baseUrl = ConfigReader.getBaseUrl();
         Configuration.pollingInterval = 1000;
 

@@ -23,8 +23,5 @@ public class ConfigReader {
     public static String getBaseUrl() {
         return prop.getProperty("baseUrl");
     }
-
-    public static String getRemoteUrl() {
-        return prop.getProperty("remoteUrl");
-    }
 }
+
