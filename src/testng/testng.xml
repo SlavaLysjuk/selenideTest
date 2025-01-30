@@ -1,0 +1,7 @@
+<suite name="ParallelSuite">
+    <test name="Selenoid Tests">
+        <classes>
+            <class name="QaAutoSelenoidTest"/>
+        </classes>
+    </test>
+</suite>
