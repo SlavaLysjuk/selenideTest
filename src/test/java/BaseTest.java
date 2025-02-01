@@ -26,19 +26,18 @@ public class BaseTest {
         log.info("Test Method setUp");
 //        Configuration.remote = "http://localhost:4444/wd/hub";
         Configuration.browser = "chrome"; // Використовуємо ChromeDriver, який підтримує Chromium
-        Configuration.browserBinary = "/usr/bin/chromium"; // Вкажи шлях до Chromium
+//        Configuration.browserBinary = "/usr/bin/chromium"; // Вкажи шлях до Chromium
         Configuration.headless = true;
         Configuration.timeout = 10000;
-//        Configuration.headless = true;
         Configuration.baseUrl = ConfigReader.getBaseUrl();
         Configuration.pollingInterval = 1000;
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("selenoid:options", Map.of(
-                "enableVNC", true,
-                "enableVideo", false
-        ));
-        Configuration.browserCapabilities = capabilities;
+//        DesiredCapabilities capabilities = new DesiredCapabilities();
+//        capabilities.setCapability("selenoid:options", Map.of(
+//                "enableVNC", true,
+//                "enableVideo", false
+//        ));
+//        Configuration.browserCapabilities = capabilities;
 
         open("/");
     }
