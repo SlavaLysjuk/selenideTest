@@ -15,6 +15,7 @@ public class BaseTest {
         log.info("Test Method setUp");
         Configuration.timeout = 1000;
         Configuration.browser = "chrome";
+        Configuration.headless = true;
         Configuration.baseUrl = ConfigReader.getBaseUrl();
         Configuration.pollingInterval = 1000;
 
