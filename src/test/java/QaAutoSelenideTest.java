@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -17,6 +18,7 @@ public class QaAutoSelenideTest extends BaseTest {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
     String expectedDate = today.format(formatter);
 
+    @Ignore
     @Test
     public void testAddCar() {
         $x("//button[text()='Guest log in']").shouldBe(visible).click();

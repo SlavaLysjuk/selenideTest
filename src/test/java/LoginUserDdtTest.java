@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Condition;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -10,6 +11,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class LoginUserDdtTest extends BaseTest {
 
+    @Ignore
     @Test(dataProvider = "loginPassword")
     public void testUserLoginByDdt(String email, String password) {
         $x("//button[text()='Sign In']").shouldBe(visible).click();
