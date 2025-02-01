@@ -16,6 +16,7 @@
         <aspectj.version>1.9.9</aspectj.version>
     </properties>
 
+
     <dependencyManagement>
     <dependencies>
         <dependency>
@@ -76,6 +77,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
+                    <systemPropertyVariables>
+                        <allure.results.directory>target/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
                     <argLine>
                         -Dfile.encoding=${project.build.sourceEncoding}
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
