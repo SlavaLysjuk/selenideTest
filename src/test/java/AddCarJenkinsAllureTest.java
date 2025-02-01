@@ -1,6 +1,6 @@
 import org.testng.annotations.Test;
 
-public class AddCarJenkinsAllureTest extends BaseTest{
+public class AddCarJenkinsAllureTest{
 
     @Test
     public void testAddCarJenkins() {
