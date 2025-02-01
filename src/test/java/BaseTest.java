@@ -24,7 +24,7 @@ public class BaseTest {
 //        open("/");
 
         log.info("Test Method setUp");
-        Configuration.remote = "http://localhost:4444/wd/hub";
+        Configuration.remote = "http://localhost:8080/";
         Configuration.browser = "chrome";
         Configuration.timeout = 10000;
         Configuration.headless = true;
