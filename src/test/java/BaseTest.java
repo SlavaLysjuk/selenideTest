@@ -27,7 +27,7 @@ public class BaseTest {
         Configuration.remote = "http://localhost:4444/wd/hub";
         Configuration.browser = "chrome";
         Configuration.timeout = 10000;
-        Configuration.headless = false;
+        Configuration.headless = true;
         Configuration.baseUrl = ConfigReader.getBaseUrl();
         Configuration.pollingInterval = 1000;
 
