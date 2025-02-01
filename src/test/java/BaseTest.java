@@ -25,9 +25,9 @@ public class BaseTest {
 
         log.info("Test Method setUp");
 //        Configuration.remote = "http://localhost:4444/wd/hub";
-        Configuration.browser = "firefox";
+        Configuration.browser = "chrome";
         Configuration.timeout = 10000;
-        Configuration.headless = true;
+//        Configuration.headless = true;
         Configuration.baseUrl = ConfigReader.getBaseUrl();
         Configuration.pollingInterval = 1000;
 
