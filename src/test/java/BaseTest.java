@@ -16,7 +16,7 @@ public class BaseTest {
     public void setUp() {
         log.info("Test Method setUp");
         Configuration.timeout = 1000;
-        log.info("Remote URL: " + ConfigReader.getRemoteUrl());
+//        log.info("Remote URL: " + ConfigReader.getRemoteUrl());
         //Configuration.remote = "http://localhost:4444/wd/hub";
 //        Configuration.remote = ConfigReader.getRemoteUrl();
         Configuration.browser = "chrome";
