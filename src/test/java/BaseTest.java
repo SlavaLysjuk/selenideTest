@@ -14,29 +14,12 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
-//        log.info("Test Method setUp");
-//        Configuration.timeout = 1000;
-//        Configuration.browser = "chrome";
-//        Configuration.headless = true;
-//        Configuration.baseUrl = ConfigReader.getBaseUrl();
-//        Configuration.pollingInterval = 1000;
-//
-//        open("/");
-
         log.info("Test Method setUp");
-//        Configuration.remote = "http://localhost:4444/wd/hub";
         Configuration.browser = "chrome";
         Configuration.headless = false;
         Configuration.timeout = 10000;
         Configuration.baseUrl = ConfigReader.getBaseUrl();
         Configuration.pollingInterval = 1000;
-
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("selenoid:options", Map.of(
-                "enableVNC", true,
-                "enableVideo", false
-        ));
-        Configuration.browserCapabilities = capabilities;
 
         open("/");
     }
