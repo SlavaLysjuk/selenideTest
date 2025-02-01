@@ -25,7 +25,8 @@ public class BaseTest {
 
         log.info("Test Method setUp");
 //        Configuration.remote = "http://localhost:4444/wd/hub";
-        Configuration.browser = "chrome";
+//        Configuration.browser = "chrome";
+        Configuration.browserBinary = "/Applications/Chromium.app/Contents/MacOS/Chromium";
         Configuration.timeout = 10000;
 //        Configuration.headless = true;
         Configuration.baseUrl = ConfigReader.getBaseUrl();
