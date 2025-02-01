@@ -27,7 +27,7 @@ public class BaseTest {
 //        Configuration.remote = "http://localhost:4444/wd/hub";
         Configuration.browser = "chrome"; // Використовуємо ChromeDriver, який підтримує Chromium
         Configuration.browserBinary = "/usr/bin/chromium"; // Вкажи шлях до Chromium
-//        Configuration.headless = true;
+        Configuration.headless = true;
         Configuration.timeout = 10000;
 //        Configuration.headless = true;
         Configuration.baseUrl = ConfigReader.getBaseUrl();
