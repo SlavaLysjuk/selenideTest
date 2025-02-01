@@ -25,7 +25,7 @@ public class AddCarJenkinsAllureTest extends BaseTest {
     @Owner("Slava Lysjuk")
     @Link("https://lms.ithillel.ua/groups/66a3b3f284150597717a2ab7/homeworks/6787738aaf5b996f98f997af")
     @Severity(SeverityLevel.BLOCKER)
-    public void testAddCarJenkins() {
+    public void testAddCarJenkinsAllure() {
         $x("//button[text()='Guest log in']").shouldBe(visible).click();
         webdriver().shouldHave(url("https://guest:welcome2qauto@qauto.forstudy.space/panel/garage"));
         $x("//button[text()='Add car']").shouldBe(visible).click();
