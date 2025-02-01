@@ -1,7 +1,6 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.*;
-import io.qameta.allure.internal.shadowed.jackson.databind.ser.Serializers;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
